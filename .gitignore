@@ -1,0 +1,23 @@
+node_modules/
+out/
+.next*/
+.env.local
+*.log
+# Abandoned create-next-app scaffold (sandbox rename failure); use webapp/
+web/
+
+# Local credentials and agent state
+.mojo/
+.local/
+.agents/
+.claude/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+
+# Generated compiler caches
+contracts/cache/
+*.tsbuildinfo

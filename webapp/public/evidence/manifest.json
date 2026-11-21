@@ -1,0 +1,35 @@
+{
+  "id": "ER-001",
+  "version": 2,
+  "files": [
+    {
+      "name": "view-4950.jpg",
+      "label": "原位照片",
+      "path": "/evidence/view-4950.jpg",
+      "sha256": "1d1dabbb1db471be0ef1be4112c30b09186cfdc315a4ac8a732e4d5c1182c402"
+    },
+    {
+      "name": "view-4958.jpg",
+      "label": "杯身纹样特写",
+      "path": "/evidence/view-4958.jpg",
+      "sha256": "d7c74666c2ff5e5b96ff695f5d1a58aa55e00ad14f8f6263392e4a287754f44d"
+    },
+    {
+      "name": "field-note.txt",
+      "label": "模拟现场记录",
+      "path": "/evidence/field-note.txt",
+      "sha256": "0820575c9a5cf000744267b33bae802472b5d84a9d4fd1dd9a3ccedc888fea14"
+    },
+    {
+      "name": "mug-display.glb",
+      "label": "三维展示模型",
+      "path": "/evidence/mug-display.glb",
+      "sha256": "1d6667803aa1328d4055012c64c07c53b282cdd2c5d7c64580f1fbe11ec97dd9",
+      "source": {
+        "name": "968776f2d622a48ed0833a581edc6452.usdz",
+        "sha256": "40620c34f9b87319f5c3f49a89d958a63915746bcb4902cef7e44e167ffd18cb",
+        "relationship": "web-optimized derivative"
+      }
+    }
+  ]
+}

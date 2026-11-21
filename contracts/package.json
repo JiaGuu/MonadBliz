@@ -1,0 +1,13 @@
+{
+  "name": "monad-mint-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Foundry-layout contracts for the Monad NFT minting demo; solcjs is a local fallback when Foundry is not installed.",
+  "scripts": {
+    "compile": "node scripts/compile.js"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "5.6.1",
+    "solc": "0.8.28"
+  }
+}

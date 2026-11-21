@@ -1,0 +1,9 @@
+{
+  "chainId": 10143,
+  "contract": "EvidenceRelay",
+  "address": "0xE22987a485D622E66921051C59DF995896719050",
+  "deployer": "0x0668D432198417254eebE7Af04f0990feB9eE5C4",
+  "transactionHash": "0x0d56255886e66e077ce1275fc97c59cc858eb9eb5aaf6176c8620febb3d70a41",
+  "blockNumber": 81547234,
+  "status": "success"
+}

@@ -1,0 +1,39 @@
+name: Publish Evidence Relay
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: webapp/package-lock.json
+      - uses: actions/configure-pages@v5
+        id: pages
+      - run: npm ci
+        working-directory: webapp
+      - run: npm run typecheck && npx next build --webpack
+        working-directory: webapp
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_EVIDENCE_CONTRACT_ADDRESS: '0xE22987a485D622E66921051C59DF995896719050'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: webapp/out
+      - uses: actions/deploy-pages@v4
+        id: deployment
