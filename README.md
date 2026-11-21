@@ -7,7 +7,7 @@
 ![证链 3D 核心工作台](docs/evidence-relay.png)
 
 - GitHub 仓库：https://github.com/JiaGuu/MonadBliz
-- 前端演示（待 Pages 部署成功）：https://jiaguu.github.io/MonadBliz/
+- 前端演示：https://jiaguu.github.io/MonadBliz/
 - 关联活动：Monad Blitz@广州
 
 ## 主要功能
